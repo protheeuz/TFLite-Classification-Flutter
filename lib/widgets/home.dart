@@ -1,6 +1,6 @@
-import 'package:FlutterMobilenet/services/camera-service.dart';
-import 'package:FlutterMobilenet/services/tensorflow-service.dart';
-import 'package:FlutterMobilenet/widgets/recognition.dart';
+import 'package:RayProject/services/camera-service.dart';
+import 'package:RayProject/services/tensorflow-service.dart';
+import 'package:RayProject/widgets/recognition.dart';
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'camera-header.dart';

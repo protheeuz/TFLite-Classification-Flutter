@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:FlutterMobilenet/widgets/home.dart';
+import 'package:RayProject/widgets/home.dart';
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 

@@ -6,7 +6,8 @@ import 'package:tflite/tflite.dart';
 // singleton class used as a service
 class TensorflowService {
   // singleton boilerplate
-  static final TensorflowService _tensorflowService = TensorflowService._internal();
+  static final TensorflowService _tensorflowService =
+      TensorflowService._internal();
 
   factory TensorflowService() {
     return _tensorflowService;
@@ -23,7 +24,7 @@ class TensorflowService {
     try {
       this._recognitionController.add(null);
       await Tflite.loadModel(
-        model: "assets/mobilenet_v1_1.0_224.tflite",
+        model: "assets/model_unquant.tflite",
         labels: "assets/labels.txt",
       );
       _modelLoaded = true;

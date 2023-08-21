@@ -1,4 +1,4 @@
-import 'package:FlutterMobilenet/services/tensorflow-service.dart';
+import 'package:RayProject/services/tensorflow-service.dart';
 import 'package:camera/camera.dart';
 
 // singleton class used as a service

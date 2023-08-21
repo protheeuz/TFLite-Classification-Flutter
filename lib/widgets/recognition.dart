@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:FlutterMobilenet/services/tensorflow-service.dart';
+import 'package:RayProject/services/tensorflow-service.dart';
 import 'package:flutter/material.dart';
 
 class Recognition extends StatefulWidget {
@@ -35,7 +35,8 @@ class _RecognitionState extends State<Recognition> {
 
   _startRecognitionStreaming() {
     if (_streamSubscription == null) {
-      _streamSubscription = _tensorflowService.recognitionStream.listen((recognition) {
+      _streamSubscription =
+          _tensorflowService.recognitionStream.listen((recognition) {
         if (recognition != null) {
           // rebuilds the screen with the new recognitions
           setState(() {
@@ -91,7 +92,7 @@ class _RecognitionState extends State<Recognition> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           Text(
-            "Recognitions",
+            "Deteksi Beras",
             style: TextStyle(fontSize: 30, fontWeight: FontWeight.w300),
           ),
         ],
@@ -136,7 +137,9 @@ class _RecognitionState extends State<Recognition> {
                     Container(
                       width: _labelConfidence,
                       child: Text(
-                        (_currentRecognition[index]['confidence'] * 100).toStringAsFixed(0) + '%',
+                        (_currentRecognition[index]['confidence'] * 100)
+                                .toStringAsFixed(0) +
+                            '%',
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                       ),
